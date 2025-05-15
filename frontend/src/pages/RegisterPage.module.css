@@ -1,0 +1,73 @@
+/* 让整个页面100%高，并且水平垂直居中卡片 */
+.pageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* 让页面至少撑满整个屏幕高度 */
+  background-color: #f5f7fa;
+  margin: 0; /* 取消默认外边距 */
+  padding: 0;
+}
+
+/* 卡片本身 */
+.card {
+  background: white;
+  padding: 3rem; /* ✅ 足够的内边距 */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 450px;
+}
+
+
+/* 标题 */
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* 输入框 */
+.inputField {
+  width: 100%;
+  padding: 1rem 0.01rem; /* ✅ 左右都有内边距 */
+  margin-bottom: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+
+.inputField:focus {
+  border-color: #3b82f6; /* 聚焦时边框变成蓝色 */
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3); /* 添加漂亮的蓝色外阴影 */
+}
+
+
+/* 按钮 */
+.submitButton {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: #3b82f6;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submitButton:hover {
+  background-color: #2563eb;
+}
+
+/* 成功提示 */
+.messageSuccess {
+  color: green;
+  margin-top: 1rem;
+}
+
+/* 错误提示 */
+.messageError {
+  color: red;
+  margin-top: 1rem;
+}
